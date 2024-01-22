@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
+          <style>
+            .center-frame {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh; /* This will take the full height of the viewport */
+            }
+        </style>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    <title>Home Page</title>
     </head>
     <body>
@@ -34,43 +42,9 @@
         </div>
       </nav>
 
-
-      <div id="pdf-viewer"></div>
-
-      <script src="JS\pdf.mjs"></script>
-      <script>
-        // Initialize the PDF.js library
-        pdfjsLib.GlobalWorkerOptions.workerSrc = 'JS\pdf.worker.mjs"';
-      
-        // Load your PDF
-        var loadingTask = pdfjsLib.getDocument('AmirBehbahanianWeb.pdf');
-        loadingTask.promise.then(function(pdf) {
-          // Use the first page to render
-          pdf.getPage(1).then(function(page) {
-            var scale = 1.5;
-            var viewport = page.getViewport({scale: scale});
-      
-            // Prepare canvas using PDF page dimensions
-            var canvas = document.createElement('canvas');
-            var context = canvas.getContext('2d');
-            canvas.height = viewport.height;
-            canvas.width = viewport.width;
-      
-            // Render PDF page into canvas context
-            var renderContext = {
-              canvasContext: context,
-              viewport: viewport
-            };
-            var renderTask = page.render(renderContext);
-            renderTask.promise.then(function () {
-              document.getElementById('pdf-viewer').appendChild(canvas);
-            });
-          });
-        }, function (reason) {
-          // PDF loading error
-          console.error(reason);
-        });
-      </script>
+      <div class="center-frame">
+        <iframe src="AmirBehbahanianWeb.pdf" style="width:2000px; height:600px;"></iframe>
+    </div>
      
             
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
