@@ -1,109 +1,253 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    <title>Home Page</title>
-        <style>
-            .custom-media {
-              background-color: #c4d4c0; /* Change this to the color you desire */
-              padding: 15px; /* Add padding for spacing */
-            }
-            .custom-card-body {
-                height: 300px; /* Adjust the height as needed */
-            }
-            .subhead {
-              initial-letter: 2;
-            }
-            .btn-3d {
-              display: inline-block;
-              padding: 10px 20px;
-              background-color: #00aeff; /* Change the background color to your desired color */
-              color: #ffffff; /* Change the text color to your desired color */
-              text-decoration: none;
-              border: 1px solid #000000; /* Change the border color to your desired color */
-              border-radius: 5px;
-              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-              transform: translate(0, 0);
-              transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-            }
-          </style>
-    </head>
-    <body>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" >Amir Behbahanian</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="./index">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./resume">Resume</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Projects & Publications
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="./CSProjects">Machine Learning</a>
-                <a class="dropdown-item" href="CMS">Computational Material Science</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="./publications">Publications</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Amir Behbahanian - Software Engineer and Machine Learning Model Developer based in Salt Lake City, Utah">
+    <meta name="keywords" content="Amir Behbahanian, Machine Learning, Data Science, Software Engineer, Utah, T.D. Williamson">
+    <meta name="author" content="Amir Behbahanian">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://amirbehbahanian.github.io/">
+    <meta property="og:title" content="Amir Behbahanian - Portfolio">
+    <meta property="og:description" content="Software Engineer and Machine Learning Model Developer based in Salt Lake City, Utah">
+    <meta property="og:image" content="https://amirbehbahanian.github.io/Images/BG.jpg">
 
-          <div>
-            &nbsp;&nbsp;&nbsp; <!-- Non-breaking space adds space between sections -->
-        </div>
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://amirbehbahanian.github.io/">
+    <meta property="twitter:title" content="Amir Behbahanian - Portfolio">
+    <meta property="twitter:description" content="Software Engineer and Machine Learning Model Developer based in Salt Lake City, Utah">
+    <meta property="twitter:image" content="https://amirbehbahanian.github.io/Images/BG.jpg">
 
-          <div class="media custom-media" style="text-align: justify;">
-            <img src="Images/BG.jpg" class="align-self-center mr-3" alt="myimage" style="border-radius: 50%; width: 200px; height: 200px;">
-            <div class="media-body">
-              <h5 class="mt-0">About Me</h5>
-                  I'm Amir Behbahanian, a Software Engineer and Machine Learning Model Developer based in Salt Lake City, Utah. My expertise lies in developing models for tabular data, Semantic Segmentation, and Time-Series analysis. Currently, I work as a Data Scientist/Software Engineer at T.D. Williamson, where I focus on developing advanced models for pipeline component identification, and anomaly detection and characterization. Prior to this, I served as a Postdoctoral Researcher at Texas A&M University, leading a team of Ph.D. students in developing machine learning models for predicting material properties. I've also earned a Ph.D. in Mechanical Engineering from Utah State University, where I was recognized as an Outstanding Doctoral Student Researcher. My passion lies in leveraging data-driven approaches to solve complex problems. I'm committed to pushing the boundaries of these fields to make a meaningful impact.            </div>
-          </div>
-
-          <div>
-            &nbsp;&nbsp;&nbsp; <!-- Non-breaking space adds space between sections -->
-        </div>
-        
+    <title>Home - Amir Behbahanian</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="Images/BG.jpg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card mb-3" style="max-width: 600px;; border-color: #ffffff;">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="Images/CS.jpg" class="card-img" alt="Materials" style="border-radius:60px 0px 60px 0px; padding-top: 10px; padding-bottom: 10px ; background-color: #b4cad0;height: 100%;">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-code me-2"></i>Amir Behbahanian
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" aria-current="page">
+                            <i class="fas fa-home me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">
+                            <i class="fas fa-file-alt me-1"></i>Resume
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-project-diagram me-1"></i>Projects & Publications
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="CSProjects.html">
+                                <i class="fas fa-brain me-2"></i>Machine Learning
+                            </a></li>
+                            <li><a class="dropdown-item" href="CMS.html">
+                                <i class="fas fa-atom me-2"></i>Computational Material Science
+                            </a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="publications.html">
+                                <i class="fas fa-book me-2"></i>Publications
+                            </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container-fluid">
+        <!-- Hero Section -->
+        <section class="hero-section py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <div class="hero-content">
+                            <h1 class="display-4 fw-bold mb-4">
+                                Hi, I'm <span class="text-primary">Amir Behbahanian</span>
+                            </h1>
+                            <p class="lead mb-4">
+                                Software Engineer and Machine Learning Model Developer based in Salt Lake City, Utah
+                            </p>
+                            <p class="mb-4">
+                                I specialize in developing models for tabular data, Semantic Segmentation, and Time-Series analysis. 
+                                Currently working as a Data Scientist/Software Engineer at T.D. Williamson, focusing on advanced models 
+                                for pipeline component identification and anomaly detection.
+                            </p>
+                            <div class="hero-buttons">
+                                <a href="resume.html" class="btn btn-primary btn-lg me-3">
+                                    <i class="fas fa-file-alt me-2"></i>View Resume
+                                </a>
+                                <a href="CSProjects.html" class="btn btn-outline-primary btn-lg">
+                                    <i class="fas fa-project-diagram me-2"></i>View Projects
+                                </a>
                             </div>
-                            <div class="col-md-8">
-                                <div class="card-body custom-card-body" style="background-color: #b4cad0;">
-                                    <h5 class="card-title">Machine Learning Projects</h5>
-                                    <p class="card-text">I have engaged in a variety of projects encompassing multiple facets of Machine Learning and Data Science. My expertise extends to handling diverse data types, including structured data and unstructured data such as images and textual information. <br><br><br> <a href="./CSProjects" class="btn btn-3d">Learn More</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="hero-image text-center">
+                            <img src="Images/BG.jpg" alt="Amir Behbahanian" class="img-fluid rounded-circle shadow-lg" style="width: 300px; height: 300px; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-center mb-5">
+                            <i class="fas fa-user me-2"></i>About Me
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="custom-media">
+                            <div class="row align-items-center">
+                                <div class="col-md-4 text-center mb-4 mb-md-0">
+                                    <img src="Images/BG.jpg" alt="Amir Behbahanian" class="img-fluid rounded-circle" style="width: 200px; height: 200px; object-fit: cover;">
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="mb-3">
+                                        I'm Amir Behbahanian, a Software Engineer and Machine Learning Model Developer based in Salt Lake City, Utah. 
+                                        My expertise lies in developing models for tabular data, Semantic Segmentation, and Time-Series analysis.
+                                    </p>
+                                    <p class="mb-3">
+                                        Currently, I work as a Data Scientist/Software Engineer at T.D. Williamson, where I focus on developing 
+                                        advanced models for pipeline component identification, and anomaly detection and characterization.
+                                    </p>
+                                    <p class="mb-0">
+                                        Prior to this, I served as a Postdoctoral Researcher at Texas A&M University, leading a team of Ph.D. 
+                                        students in developing machine learning models for predicting material properties. I've also earned a 
+                                        Ph.D. in Mechanical Engineering from Utah State University, where I was recognized as an Outstanding 
+                                        Doctoral Student Researcher.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="card mb-3" style="max-width: 600px; border-color: #ffffff;">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="Images/materialsscience-1.jpg" class="card-img" alt="CS" style="border-radius:60px 0px 60px 0px; padding-top: 10px; padding-bottom: 10px ; background-color: #b4cad0;height: 100%;">
+            </div>
+        </section>
+
+        <!-- Projects Overview Section -->
+        <section class="projects-section py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-center mb-5">
+                            <i class="fas fa-project-diagram me-2"></i>My Work
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="card h-100">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="Images/CS.jpg" class="img-fluid rounded-start h-100" alt="Machine Learning" style="object-fit: cover;">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">
+                                            <i class="fas fa-brain me-2"></i>Machine Learning Projects
+                                        </h5>
+                                        <p class="card-text flex-grow-1">
+                                            I have engaged in a variety of projects encompassing multiple facets of Machine Learning and Data Science. 
+                                            My expertise extends to handling diverse data types, including structured data and unstructured data 
+                                            such as images and textual information.
+                                        </p>
+                                        <a href="CSProjects.html" class="btn btn-3d mt-auto">
+                                            <i class="fas fa-arrow-right me-2"></i>Learn More
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-8">
-                                <div class="card-body custom-card-body" style="background-color: #b4cad0;">
-                                    <h5 class="card-title">Computational Material Science Projects</h5>
-                                    <p class="card-text">As a doctoral candidate and postdoctoral researcher, I have actively engaged in the exploration of various computational methodologies aimed at tackling challenges within the domains of vibrational physics and material characteristics. <br><br> <a href="./CMS" class="btn btn-3d">Learn More</a></p>
-                                </div>       
-          
-           
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </body>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="card h-100">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="Images/materialsscience-1.jpg" class="img-fluid rounded-start h-100" alt="Computational Material Science" style="object-fit: cover;">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">
+                                            <i class="fas fa-atom me-2"></i>Computational Material Science Projects
+                                        </h5>
+                                        <p class="card-text flex-grow-1">
+                                            As a doctoral candidate and postdoctoral researcher, I have actively engaged in the exploration of 
+                                            various computational methodologies aimed at tackling challenges within the domains of vibrational 
+                                            physics and material characteristics.
+                                        </p>
+                                        <a href="CMS.html" class="btn btn-3d mt-auto">
+                                            <i class="fas fa-arrow-right me-2"></i>Learn More
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-muted py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2024 Amir Behbahanian. All rights reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-links">
+                        <a href="https://github.com/amirbehbahanian" target="_blank" class="text-muted me-3" aria-label="GitHub">
+                            <i class="fab fa-github fa-lg"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/amirbehbahanian" target="_blank" class="text-muted me-3" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                        <a href="mailto:amir.behbahanian@example.com" class="text-muted" aria-label="Email">
+                            <i class="fas fa-envelope fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
 </html>

@@ -1,143 +1,345 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    <title>Home Page</title>
-        <style>
-            .custom-media {
-              background-color: #b4cad0; /* Change this to the color you desire */
-              padding: 15px; /* Add padding for spacing */
-            }
-          </style>
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" >Amir Behbahanian</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="./index">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./resume">Resume</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Projects & Publications
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="./CSProjects">Machine Learning</a>
-                  <a class="dropdown-item" href="CMS">Computational Material Science</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="./publications">Publications</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </nav>
-  
-
-        <div>
-            &nbsp;&nbsp;&nbsp; <!-- Non-breaking space adds space between sections -->
-        </div>
-
-          <div class="media custom-media" style="text-align: justify;">
-            <img src="Images/COMP.png" class="align-self-center mr-3" alt="myimage" style="border-radius:40px 0px 40px 0px; width: 200px; height: 200px;">
-            <div class="media-body" style="padding: 0 100px;">
-              <h5 class="mt-0">Automation of High-Throughput Quantum calculation of Material Thermal and Electrical Properties</h5>
-              Automating property calculations in the material discovery process is a pivotal optimization endeavor. In this project, I've skillfully fused two highly renowned quantum simulation tools, VASP and Quantum Espresso, employing a combination of Pyiron and bash scripting to enhance the efficiency of thermal property computations through Phonopy and Phono3py. Furthermore, for automating the assessment of electrical properties, I've seamlessly integrated AMSET with Pyiron, yielding a versatile API that is compatible with a wide array of optimization codes. By incorporating an optimization protocol such as Bayesian Optimization, this code can be harnessed to construct a surrogate model for the property space.
-            </div>
-            <a href="https://github.com/amirbehbahanian/Automation-of-Phonopy-Phono3py-and-Boltztrap" target="_blank">GitHub Link</a>
-        </div>
-
-        <div>
-            &nbsp;&nbsp;&nbsp; <!-- Non-breaking space adds space between sections -->
-        </div>
-
-        <div class="media custom-media" style="text-align: justify;">
-            <img src="Images/Chapter1.png" class="align-self-center mr-3" alt="myimage" style="border-radius:40px 0px 40px 0px; width: 300px; height: 300px;">
-            <div class="media-body">
-              <h5 class="mt-0">Temperature-Dependent Phonon Wave-Packet Simulations with Quantized Energy</h5>
-              In my research, I've been working with wave-packet simulations, often called phonon dynamics. These simulations are crucial for studying interface conductance and system dynamics.
-              <br><br>
-              In this project, I'm extending wave-packet simulations to improve post-simulation analysis and introduce an energy component to the wave packet definition. In these simulations, I can determine the most populated frequency by considering the wave number used in atom displacement equations, known through the phonon dispersion relation (PDR).
-              <br><br>
-              The Novelty of this work is that I incorporate the temperature dependence of this correspondence, demonstrating its importance. This temperature-dependent PDR, along with the density of states, allows us to control the atomic displacement amplitude's energy and assess the validity of molecular-dynamics simulations compared to the quantum particle perspective of phonons.
-            </div>
-            <a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.103.043311" target="_blank">Publication Link</a>
-        </div>
-
-        <div>
-            &nbsp;&nbsp;&nbsp; <!-- Non-breaking space adds space between sections -->
-        </div>
-
-        <div class="media custom-media" style="text-align: justify;">
-            <img src="Images/Chapter2.png" class="align-self-center mr-3" alt="myimage" style="border-radius:40px 0px 40px 0px; width: 300px; height: 300px;">
-            <div class="media-body">
-              <h5 class="mt-0">Temperature Induced Randomness in Crystalline Dielectrics</h5>
-              Understanding the dynamics of atomic and molecular vibrations is crucial for the topic of my Ph.D. research into thermal transport in nanostructured and bulk materials. Molecular dynamics simulations are often limited by system size, so I explored an alternative approach: random matrix theory, which can model amorphous materials effectively due to their random vibrational nature.
-              <br><br>  
-              In my work, I investigated whether similar random behavior could be found in crystalline materials. I hypothesized that system temperature, linked to kinetic energy, could introduce randomness. I tested this by conducting molecular dynamics simulations using Lennard-Jones argon with and without randomness introduced via Brownian dynamics.
-              <br><br>
-              The results showed that introducing randomness led to changes in vibrational modes' lifetimes. Interestingly, at higher temperatures, the difference diminished, becoming indistinguishable at around half of the Debye temperature. This discovery suggests similarities in vibrational behavior between crystalline and amorphous materials, opening the door to more efficient computational methods for studying crystalline materials.
-            </div>
-            <a href="https://digitalcommons.usu.edu/cgi/viewcontent.cgi?article=9520&context=etd#page=59" target="_blank">Publication Link</a>
-        </div>
-
-        <div>
-            &nbsp;&nbsp;&nbsp; <!-- Non-breaking space adds space between sections -->
-        </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Amir Behbahanian - Computational Material Science Projects and Research">
+    <meta name="keywords" content="Amir Behbahanian, Computational Material Science, Quantum Simulations, Phonon Dynamics, Material Properties">
+    <meta name="author" content="Amir Behbahanian">
+    
+    <title>Computational Material Science - Amir Behbahanian</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="Images/BG.jpg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-code me-2"></i>Amir Behbahanian
+            </a>
             
-        <div class="media custom-media" style="text-align: justify;">
-            <img src="Images/Chapter3.png" class="align-self-center mr-3" alt="myimage" style="border-radius:40px 0px 40px 0px; width: 300px; height: 300px;">
-            <div class="media-body">
-              <h5 class="mt-0">Atomistic Modeling of Micron-Scale Propagation Lengths of Vibrational Modes in Amorphous Silicon</h5>
-              In this research, I conducted Molecular Dynamics simulations to explore how lifetimes and spectral free paths scale in amorphous silicon across different frequencies. I compared two commonly used potentials for modeling amorphous silicon: Tersoff and Stillinger-Weber (SW).
-              <br><br>
-              Using a comprehensive methodology accounting for anharmonic effects, I determined lifetimes and spectral free paths. My findings showed that the SW potential exhibited ω<sup>-2</sup> scaling for both lifetimes and spectral free paths, while the Tersoff potential displayed ω<sup>-4</sup> scaling for lifetimes and ω<sup>-3</sup> to ω<sup>-4</sup> scaling for spectral free paths.
-                <br><br>
-              What caught my attention was the consistent ω<sup>-1</sup> scaling observed for both potentials in both lifetimes and spectral free paths. This observation suggests the absence of thermally activated relaxation, indicating that kinetic energy (temperature) induced scattering events are minimal, allowing for the propagation of micron-scale modes in amorphous silicon.
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-home me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">
+                            <i class="fas fa-file-alt me-1"></i>Resume
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-project-diagram me-1"></i>Projects & Publications
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="CSProjects.html">
+                                <i class="fas fa-brain me-2"></i>Machine Learning
+                            </a></li>
+                            <li><a class="dropdown-item active" href="CMS.html">
+                                <i class="fas fa-atom me-2"></i>Computational Material Science
+                            </a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="publications.html">
+                                <i class="fas fa-book me-2"></i>Publications
+                            </a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-            <a href="https://digitalcommons.usu.edu/cgi/viewcontent.cgi?article=9520&context=etd#page=78" target="_blank">Publication Link</a>
         </div>
+    </nav>
 
-      <div>
-          &nbsp;&nbsp;&nbsp; <!-- Non-breaking space adds space between sections -->
-      </div>
+    <!-- Main Content -->
+    <main class="container-fluid">
+        <!-- Page Header -->
+        <section class="page-header py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="display-4 fw-bold mb-3">
+                            <i class="fas fa-atom me-3"></i>Computational Material Science
+                        </h1>
+                        <p class="lead mb-4">
+                            Advancing material discovery through quantum simulations and computational methodologies
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <div class="media custom-media" style="text-align: justify;">
-          <img src="Images/ION.png" class="align-self-center mr-3" alt="myimage" style="border-radius:40px 0px 40px 0px; width: 200px; height: 200px;">
-          <div class="media-body" style="padding: 0 100px;">
-            <h5 class="mt-0">Ionizing Radiation's Impact on Filled-Epoxy Adhesive Properties</h5>
-            In this project, my objective was to identify an adhesive material capable of retaining its desirable thermal properties even when exposed to radiation. To achieve this goal, I conducted an extensive series of over 400 measurements. 
-            <br><br>
-            Furthermore, I meticulously assessed and managed the uncertainty associated with these measurements utilizing both the Taylor series method and the Monte Carlo method. Additionally, I designed and implemented a custom software program complete with a user-friendly graphical user interface (GUI). This software automates the uncertainty calculation process, streamlining it for efficient application following multiple measurements.
-          </div>
-          <a href="https://www.sciencedirect.com/science/article/abs/pii/S0143749623001768" target="_blank">Publication Link</a>
-      </div>
+        <!-- Projects Section -->
+        <section class="projects-section py-5">
+            <div class="container">
+                <!-- Project 1: High-Throughput Quantum Calculations -->
+                <div class="custom-media">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                            <img src="Images/COMP.png" alt="Quantum Calculations Automation" class="img-fluid" style="max-width: 300px;">
+                        </div>
+                        <div class="col-lg-8">
+                            <h3 class="mb-3">
+                                <i class="fas fa-cogs me-2"></i>Automation of High-Throughput Quantum Calculation of Material Thermal and Electrical Properties
+                            </h3>
+                            <p class="mb-3">
+                                Automating property calculations in the material discovery process is a pivotal optimization endeavor. 
+                                In this project, I've skillfully fused two highly renowned quantum simulation tools, VASP and Quantum Espresso, 
+                                employing a combination of Pyiron and bash scripting to enhance the efficiency of thermal property computations 
+                                through Phonopy and Phono3py.
+                            </p>
+                            <p class="mb-3">
+                                Furthermore, for automating the assessment of electrical properties, I've seamlessly integrated AMSET with Pyiron, 
+                                yielding a versatile API that is compatible with a wide array of optimization codes. By incorporating an optimization 
+                                protocol such as Bayesian Optimization, this code can be harnessed to construct a surrogate model for the property space.
+                            </p>
+                            <div class="project-tags">
+                                <span class="badge bg-primary me-2">VASP</span>
+                                <span class="badge bg-secondary me-2">Quantum Espresso</span>
+                                <span class="badge bg-info me-2">Pyiron</span>
+                                <span class="badge bg-success me-2">Phonopy</span>
+                                <span class="badge bg-warning me-2">Phono3py</span>
+                                <a href="https://github.com/amirbehbahanian/Automation-of-Phonopy-Phono3py-and-Boltztrap" target="_blank" class="badge bg-dark text-decoration-none">
+                                    <i class="fab fa-github me-1"></i>GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-      <div>
-          &nbsp;&nbsp;&nbsp; <!-- Non-breaking space adds space between sections -->
-      </div>
+                <!-- Project 2: Temperature-Dependent Phonon Wave-Packet Simulations -->
+                <div class="custom-media">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                            <img src="Images/Chapter1.png" alt="Phonon Wave-Packet Simulations" class="img-fluid" style="max-width: 300px;">
+                        </div>
+                        <div class="col-lg-8">
+                            <h3 class="mb-3">
+                                <i class="fas fa-wave-square me-2"></i>Temperature-Dependent Phonon Wave-Packet Simulations with Quantized Energy
+                            </h3>
+                            <p class="mb-3">
+                                In my research, I've been working with wave-packet simulations, often called phonon dynamics. 
+                                These simulations are crucial for studying interface conductance and system dynamics.
+                            </p>
+                            <p class="mb-3">
+                                In this project, I'm extending wave-packet simulations to improve post-simulation analysis and introduce 
+                                an energy component to the wave packet definition. In these simulations, I can determine the most populated 
+                                frequency by considering the wave number used in atom displacement equations, known through the phonon 
+                                dispersion relation (PDR).
+                            </p>
+                            <p class="mb-3">
+                                The Novelty of this work is that I incorporate the temperature dependence of this correspondence, 
+                                demonstrating its importance. This temperature-dependent PDR, along with the density of states, allows 
+                                us to control the atomic displacement amplitude's energy and assess the validity of molecular-dynamics 
+                                simulations compared to the quantum particle perspective of phonons.
+                            </p>
+                            <div class="project-tags">
+                                <span class="badge bg-primary me-2">Phonon Dynamics</span>
+                                <span class="badge bg-secondary me-2">Wave-Packet</span>
+                                <span class="badge bg-info me-2">Molecular Dynamics</span>
+                                <span class="badge bg-success me-2">Quantum Physics</span>
+                                <a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.103.043311" target="_blank" class="badge bg-warning text-decoration-none">
+                                    <i class="fas fa-external-link-alt me-1"></i>Publication
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-      <div class="media custom-media" style="text-align: justify;">
-        <img src="Images/Image.gif" class="align-self-center mr-3" alt="myimage" style="border-radius:40px 0px 40px 0px; width: 200px; height: 200px;">
-        <div class="media-body" style="padding: 0 100px;">
-          <h5 class="mt-0">Image Analysis of Scanning Electron Microscope (SEM) Images</h5>
-          The research objective aimed to create capping layers to regulate a nano-manufacturing process, enabling precise control over nanoparticle distribution and size. To achieve this, I developed a MATLAB code that effectively analyzed Scanning Electron Microscope (SEM) images. Through a series of preprocessing steps, including edge detection, the code generated valuable data on both intra-particle distances and particle sizing.
+                <!-- Project 3: Temperature Induced Randomness -->
+                <div class="custom-media">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                            <img src="Images/Chapter2.png" alt="Temperature Induced Randomness" class="img-fluid" style="max-width: 300px;">
+                        </div>
+                        <div class="col-lg-8">
+                            <h3 class="mb-3">
+                                <i class="fas fa-random me-2"></i>Temperature Induced Randomness in Crystalline Dielectrics
+                            </h3>
+                            <p class="mb-3">
+                                Understanding the dynamics of atomic and molecular vibrations is crucial for the topic of my Ph.D. 
+                                research into thermal transport in nanostructured and bulk materials. Molecular dynamics simulations 
+                                are often limited by system size, so I explored an alternative approach: random matrix theory, 
+                                which can model amorphous materials effectively due to their random vibrational nature.
+                            </p>
+                            <p class="mb-3">
+                                In my work, I investigated whether similar random behavior could be found in crystalline materials. 
+                                I hypothesized that system temperature, linked to kinetic energy, could introduce randomness. 
+                                I tested this by conducting molecular dynamics simulations using Lennard-Jones argon with and 
+                                without randomness introduced via Brownian dynamics.
+                            </p>
+                            <p class="mb-3">
+                                The results showed that introducing randomness led to changes in vibrational modes' lifetimes. 
+                                Interestingly, at higher temperatures, the difference diminished, becoming indistinguishable at 
+                                around half of the Debye temperature. This discovery suggests similarities in vibrational behavior 
+                                between crystalline and amorphous materials, opening the door to more efficient computational 
+                                methods for studying crystalline materials.
+                            </p>
+                            <div class="project-tags">
+                                <span class="badge bg-primary me-2">Random Matrix Theory</span>
+                                <span class="badge bg-secondary me-2">Molecular Dynamics</span>
+                                <span class="badge bg-info me-2">Lennard-Jones</span>
+                                <span class="badge bg-success me-2">Brownian Dynamics</span>
+                                <a href="https://digitalcommons.usu.edu/cgi/viewcontent.cgi?article=9520&context=etd#page=59" target="_blank" class="badge bg-warning text-decoration-none">
+                                    <i class="fas fa-external-link-alt me-1"></i>Publication
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Atomistic Modeling of Amorphous Silicon -->
+                <div class="custom-media">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                            <img src="Images/Chapter3.png" alt="Amorphous Silicon Modeling" class="img-fluid" style="max-width: 300px;">
+                        </div>
+                        <div class="col-lg-8">
+                            <h3 class="mb-3">
+                                <i class="fas fa-microchip me-2"></i>Atomistic Modeling of Micron-Scale Propagation Lengths of Vibrational Modes in Amorphous Silicon
+                            </h3>
+                            <p class="mb-3">
+                                In this research, I conducted Molecular Dynamics simulations to explore how lifetimes and spectral 
+                                free paths scale in amorphous silicon across different frequencies. I compared two commonly used 
+                                potentials for modeling amorphous silicon: Tersoff and Stillinger-Weber (SW).
+                            </p>
+                            <p class="mb-3">
+                                Using a comprehensive methodology accounting for anharmonic effects, I determined lifetimes and 
+                                spectral free paths. My findings showed that the SW potential exhibited ω<sup>-2</sup> scaling for 
+                                both lifetimes and spectral free paths, while the Tersoff potential displayed ω<sup>-4</sup> scaling 
+                                for lifetimes and ω<sup>-3</sup> to ω<sup>-4</sup> scaling for spectral free paths.
+                            </p>
+                            <p class="mb-3">
+                                What caught my attention was the consistent ω<sup>-1</sup> scaling observed for both potentials 
+                                in both lifetimes and spectral free paths. This observation suggests the absence of thermally 
+                                activated relaxation, indicating that kinetic energy (temperature) induced scattering events are 
+                                minimal, allowing for the propagation of micron-scale modes in amorphous silicon.
+                            </p>
+                            <div class="project-tags">
+                                <span class="badge bg-primary me-2">Amorphous Silicon</span>
+                                <span class="badge bg-secondary me-2">Tersoff Potential</span>
+                                <span class="badge bg-info me-2">Stillinger-Weber</span>
+                                <span class="badge bg-success me-2">Spectral Free Paths</span>
+                                <a href="https://digitalcommons.usu.edu/cgi/viewcontent.cgi?article=9520&context=etd#page=78" target="_blank" class="badge bg-warning text-decoration-none">
+                                    <i class="fas fa-external-link-alt me-1"></i>Publication
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Ionizing Radiation Impact -->
+                <div class="custom-media">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                            <img src="Images/ION.png" alt="Ionizing Radiation Impact" class="img-fluid" style="max-width: 300px;">
+                        </div>
+                        <div class="col-lg-8">
+                            <h3 class="mb-3">
+                                <i class="fas fa-radiation me-2"></i>Ionizing Radiation's Impact on Filled-Epoxy Adhesive Properties
+                            </h3>
+                            <p class="mb-3">
+                                In this project, my objective was to identify an adhesive material capable of retaining its 
+                                desirable thermal properties even when exposed to radiation. To achieve this goal, I conducted 
+                                an extensive series of over 400 measurements.
+                            </p>
+                            <p class="mb-3">
+                                Furthermore, I meticulously assessed and managed the uncertainty associated with these measurements 
+                                utilizing both the Taylor series method and the Monte Carlo method. Additionally, I designed and 
+                                implemented a custom software program complete with a user-friendly graphical user interface (GUI). 
+                                This software automates the uncertainty calculation process, streamlining it for efficient application 
+                                following multiple measurements.
+                            </p>
+                            <div class="project-tags">
+                                <span class="badge bg-primary me-2">Ionizing Radiation</span>
+                                <span class="badge bg-secondary me-2">Epoxy Adhesives</span>
+                                <span class="badge bg-info me-2">Uncertainty Analysis</span>
+                                <span class="badge bg-success me-2">Monte Carlo</span>
+                                <a href="https://www.sciencedirect.com/science/article/abs/pii/S0143749623001768" target="_blank" class="badge bg-warning text-decoration-none">
+                                    <i class="fas fa-external-link-alt me-1"></i>Publication
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: SEM Image Analysis -->
+                <div class="custom-media">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                            <img src="Images/Image.gif" alt="SEM Image Analysis" class="img-fluid" style="max-width: 300px;">
+                        </div>
+                        <div class="col-lg-8">
+                            <h3 class="mb-3">
+                                <i class="fas fa-microscope me-2"></i>Image Analysis of Scanning Electron Microscope (SEM) Images
+                            </h3>
+                            <p class="mb-3">
+                                The research objective aimed to create capping layers to regulate a nano-manufacturing process, 
+                                enabling precise control over nanoparticle distribution and size. To achieve this, I developed 
+                                a MATLAB code that effectively analyzed Scanning Electron Microscope (SEM) images.
+                            </p>
+                            <p class="mb-3">
+                                Through a series of preprocessing steps, including edge detection, the code generated valuable 
+                                data on both intra-particle distances and particle sizing. This analysis provided crucial 
+                                insights for optimizing the nano-manufacturing process and controlling nanoparticle properties.
+                            </p>
+                            <div class="project-tags">
+                                <span class="badge bg-primary me-2">SEM Analysis</span>
+                                <span class="badge bg-secondary me-2">MATLAB</span>
+                                <span class="badge bg-info me-2">Image Processing</span>
+                                <span class="badge bg-success me-2">Nanoparticles</span>
+                                <a href="https://www.jove.com/t/58827/large-area-substrate-based-nanofabrication-controllable-customizable" target="_blank" class="badge bg-warning text-decoration-none">
+                                    <i class="fas fa-external-link-alt me-1"></i>Publication
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-muted py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2024 Amir Behbahanian. All rights reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-links">
+                        <a href="https://github.com/amirbehbahanian" target="_blank" class="text-muted me-3" aria-label="GitHub">
+                            <i class="fab fa-github fa-lg"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/amirbehbahanian" target="_blank" class="text-muted me-3" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                        <a href="mailto:amir.behbahanian@example.com" class="text-muted" aria-label="Email">
+                            <i class="fas fa-envelope fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <a href="https://www.jove.com/t/58827/large-area-substrate-based-nanofabrication-controllable-customizable" target="_blank">Publication Link</a>
-    </div>
+    </footer>
 
-    <div>
-        &nbsp;&nbsp;&nbsp; <!-- Non-breaking space adds space between sections -->
-    </div>
-
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </body>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
 </html>
