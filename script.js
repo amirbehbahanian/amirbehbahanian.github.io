@@ -1,5 +1,5 @@
 // Common JavaScript functionality
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Add fade-in animation to main content
     const mainContent = document.querySelector('main') || document.querySelector('.container') || document.body;
     if (mainContent) {
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add active class to current navigation item
     const currentPage = window.location.pathname.split('/').pop().replace('.html', '');
     const navLinks = document.querySelectorAll('.nav-link');
-    
+
     navLinks.forEach(link => {
         const href = link.getAttribute('href');
         if (href && href.includes(currentPage)) {
@@ -34,14 +34,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // Handle mobile navigation toggle
     const navbarToggler = document.querySelector('.navbar-toggler');
     const navbarCollapse = document.querySelector('.navbar-collapse');
-    
+
     if (navbarToggler && navbarCollapse) {
-        navbarToggler.addEventListener('click', function() {
+        navbarToggler.addEventListener('click', function () {
             navbarCollapse.classList.toggle('show');
         });
 
         // Close mobile menu when clicking outside
-        document.addEventListener('click', function(e) {
+        document.addEventListener('click', function (e) {
             if (!navbarToggler.contains(e.target) && !navbarCollapse.contains(e.target)) {
                 navbarCollapse.classList.remove('show');
             }
@@ -51,11 +51,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add loading animation for images
     const images = document.querySelectorAll('img');
     images.forEach(img => {
-        img.addEventListener('load', function() {
+        img.addEventListener('load', function () {
             this.style.opacity = '1';
         });
-        
-        img.addEventListener('error', function() {
+
+        img.addEventListener('error', function () {
             this.style.opacity = '0.5';
             this.alt = 'Image not available';
         });
@@ -64,11 +64,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add hover effects to cards
     const cards = document.querySelectorAll('.card');
     cards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
+        card.addEventListener('mouseenter', function () {
             this.style.transform = 'translateY(-5px)';
         });
-        
-        card.addEventListener('mouseleave', function() {
+
+        card.addEventListener('mouseleave', function () {
             this.style.transform = 'translateY(0)';
         });
     });
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add copy functionality for publication links
     const publicationLinks = document.querySelectorAll('a[href*="doi.org"], a[href*="github.com"]');
     publicationLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             // Add visual feedback
             this.style.transform = 'scale(0.95)';
             setTimeout(() => {
@@ -84,6 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 150);
         });
     });
+
 
     // Add scroll to top functionality
     const scrollToTopBtn = document.createElement('button');
@@ -106,11 +107,11 @@ document.addEventListener('DOMContentLoaded', function() {
         font-size: 20px;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     `;
-    
+
     document.body.appendChild(scrollToTopBtn);
 
     // Show/hide scroll to top button
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         if (window.pageYOffset > 300) {
             scrollToTopBtn.style.opacity = '1';
         } else {
@@ -118,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    scrollToTopBtn.addEventListener('click', function() {
+    scrollToTopBtn.addEventListener('click', function () {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
@@ -126,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Add keyboard navigation support
-    document.addEventListener('keydown', function(e) {
+    document.addEventListener('keydown', function (e) {
         // Escape key to close mobile menu
         if (e.key === 'Escape' && navbarCollapse.classList.contains('show')) {
             navbarCollapse.classList.remove('show');
@@ -164,6 +165,7 @@ function debounce(func, wait) {
         timeout = setTimeout(later, wait);
     };
 }
+
 
 // Add responsive image handling
 function handleResponsiveImages() {

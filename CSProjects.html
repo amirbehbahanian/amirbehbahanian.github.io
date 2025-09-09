@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Amir Behbahanian - Machine Learning Projects and Research">
-    <meta name="keywords" content="Amir Behbahanian, Machine Learning, Data Science, Projects, Research, LSTM, Semantic Segmentation">
+    <meta name="keywords"
+        content="Amir Behbahanian, Machine Learning, Data Science, Projects, Research, LSTM, Semantic Segmentation">
     <meta name="author" content="Amir Behbahanian">
-    
+
     <title>Machine Learning Projects - Amir Behbahanian</title>
-    
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="Images/BG.jpg">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -26,11 +29,12 @@
             <a class="navbar-brand" href="index.html">
                 <i class="fas fa-code me-2"></i>Amir Behbahanian
             </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
@@ -44,20 +48,23 @@
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fas fa-project-diagram me-1"></i>Projects & Publications
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item active" href="CSProjects.html">
-                                <i class="fas fa-brain me-2"></i>Machine Learning
-                            </a></li>
+                                    <i class="fas fa-brain me-2"></i>Machine Learning
+                                </a></li>
                             <li><a class="dropdown-item" href="CMS.html">
-                                <i class="fas fa-atom me-2"></i>Computational Material Science
-                            </a></li>
-                            <li><hr class="dropdown-divider"></li>
+                                    <i class="fas fa-atom me-2"></i>Computational Material Science
+                                </a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
                             <li><a class="dropdown-item" href="publications.html">
-                                <i class="fas fa-book me-2"></i>Publications
-                            </a></li>
+                                    <i class="fas fa-book me-2"></i>Publications
+                                </a></li>
                         </ul>
                     </li>
                 </ul>
@@ -76,7 +83,8 @@
                             <i class="fas fa-brain me-3"></i>Machine Learning Projects
                         </h1>
                         <p class="lead mb-4">
-                            Exploring the intersection of data science, artificial intelligence, and real-world applications
+                            Exploring the intersection of data science, artificial intelligence, and real-world
+                            applications
                         </p>
                     </div>
                 </div>
@@ -90,21 +98,27 @@
                 <div class="custom-media">
                     <div class="row align-items-center">
                         <div class="col-lg-4 text-center mb-4 mb-lg-0">
-                            <img src="Images/LSTM_FAILED_(seq1000,y=X+1,X-dX-FFT)_Sensor31.png" alt="LSTM Signal Analysis" class="img-fluid" style="max-width: 300px;">
+                            <img src="Images/LSTM_FAILED_(seq1000,y=X+1,X-dX-FFT)_Sensor31.png"
+                                alt="LSTM Signal Analysis" class="img-fluid" style="max-width: 300px;">
                         </div>
                         <div class="col-lg-8">
                             <h3 class="mb-3">
                                 <i class="fas fa-chart-line me-2"></i>Signal Anomaly Detection: An LSTM Approach
                             </h3>
                             <p class="mb-3">
-                                In this project, I designed an innovative architecture that leverages a fusion of LSTM and CNN layers. 
-                                The input dataset consists of multiple channels, encompassing signal data, signal variation, and a 
+                                In this project, I designed an innovative architecture that leverages a fusion of LSTM
+                                and CNN layers.
+                                The input dataset consists of multiple channels, encompassing signal data, signal
+                                variation, and a
                                 channel dedicated to frequency characteristics.
                             </p>
                             <p class="mb-3">
-                                While the model was initially trained on normal signals without any anomalies, its predictive ability 
-                                diverges significantly when confronted with signals exhibiting anomalous behavior. To identify these 
-                                anomalous segments within the signal, I employed the Kullback–Leibler divergence, comparing the 
+                                While the model was initially trained on normal signals without any anomalies, its
+                                predictive ability
+                                diverges significantly when confronted with signals exhibiting anomalous behavior. To
+                                identify these
+                                anomalous segments within the signal, I employed the Kullback–Leibler divergence,
+                                comparing the
                                 distribution of the prediction-error with that of a standard normal distribution.
                             </p>
                             <div class="project-tags">
@@ -121,22 +135,30 @@
                 <div class="custom-media">
                     <div class="row align-items-center">
                         <div class="col-lg-4 text-center mb-4 mb-lg-0">
-                            <img src="Images/Mixed2.png" alt="Semantic Segmentation Pipeline" class="img-fluid" style="max-width: 300px;">
+                            <img src="Images/Mixed2.png" alt="Semantic Segmentation Pipeline" class="img-fluid"
+                                style="max-width: 300px;">
                         </div>
                         <div class="col-lg-8">
                             <h3 class="mb-3">
-                                <i class="fas fa-object-group me-2"></i>A Semantic Segmentation Solution for Oil and Gas Pipeline Component Detection
+                                <i class="fas fa-object-group me-2"></i>A Semantic Segmentation Solution for Oil and Gas
+                                Pipeline Component Detection
                             </h3>
                             <p class="mb-3">
-                                I have developed a Semantic Segmentation model that represents the weighted average of four different models. 
-                                I used this model to detect the components of a pipeline based on Magnetic Flux Leakage (MFL) data. 
-                                To the best of my knowledge, this marks the first instance where Semantic Segmentation has been applied 
+                                I have developed a Semantic Segmentation model that represents the weighted average of
+                                four different models.
+                                I used this model to detect the components of a pipeline based on Magnetic Flux Leakage
+                                (MFL) data.
+                                To the best of my knowledge, this marks the first instance where Semantic Segmentation
+                                has been applied
                                 for this specific purpose.
                             </p>
                             <p class="mb-3">
-                                This ensemble model comprises four distinct components, each built using a unique combination of architectures: 
-                                FPN and Unet, alongside encoders resnext and densenet. Impressively, the final model exhibited outstanding 
-                                performance, boasting a remarkable 90% recall rate and a solid 77% precision rate in detecting components. 
+                                This ensemble model comprises four distinct components, each built using a unique
+                                combination of architectures:
+                                FPN and Unet, alongside encoders resnext and densenet. Impressively, the final model
+                                exhibited outstanding
+                                performance, boasting a remarkable 90% recall rate and a solid 77% precision rate in
+                                detecting components.
                                 This work has been accepted to ICMLA 2023.
                             </p>
                             <div class="project-tags">
@@ -154,21 +176,28 @@
                 <div class="custom-media">
                     <div class="row align-items-center">
                         <div class="col-lg-4 text-center mb-4 mb-lg-0">
-                            <img src="Images/length.png" alt="Pipeline Defect Analysis" class="img-fluid" style="max-width: 300px;">
+                            <img src="Images/length.png" alt="Pipeline Defect Analysis" class="img-fluid"
+                                style="max-width: 300px;">
                         </div>
                         <div class="col-lg-8">
                             <h3 class="mb-3">
-                                <i class="fas fa-search me-2"></i>Pipeline Defect Characterization Using a Boosting Model
+                                <i class="fas fa-search me-2"></i>Pipeline Defect Characterization Using a Boosting
+                                Model
                             </h3>
                             <p class="mb-3">
-                                I have designed a LightGBM model to forecast the dimensions of defects, specifically their geometric properties, 
-                                based on non-destructive measurement signals. The extracted features encompass a combination of signal 
+                                I have designed a LightGBM model to forecast the dimensions of defects, specifically
+                                their geometric properties,
+                                based on non-destructive measurement signals. The extracted features encompass a
+                                combination of signal
                                 characteristics at the defect's location and the measurement conditions.
                             </p>
                             <p class="mb-3">
-                                To enhance the model's performance, I employed Bayesian Optimization via Optuna and utilized the 
-                                Tree-structured Parzen Estimator (TPE) algorithm for hyperparameter tuning. The outcome of the final 
-                                model showed a significant improvement in the R2-score, MAE and MSE when compared to the previous model.
+                                To enhance the model's performance, I employed Bayesian Optimization via Optuna and
+                                utilized the
+                                Tree-structured Parzen Estimator (TPE) algorithm for hyperparameter tuning. The outcome
+                                of the final
+                                model showed a significant improvement in the R2-score, MAE and MSE when compared to the
+                                previous model.
                             </p>
                             <div class="project-tags">
                                 <span class="badge bg-primary me-2">LightGBM</span>
@@ -191,19 +220,27 @@
                                 <i class="fas fa-atom me-2"></i>A Boosting Model to Predict Material Properties
                             </h3>
                             <p class="mb-3">
-                                As a Postdoctoral Researcher, I spearheaded a team of Ph.D. students to meticulously extract Alloy 
-                                preparation properties, followed by the creation of over 3000 features derived from Quantum Simulations. 
-                                Subsequently, I employed multiple Boosting models to forecast four distinct temperatures crucial to 
+                                As a Postdoctoral Researcher, I spearheaded a team of Ph.D. students to meticulously
+                                extract Alloy
+                                preparation properties, followed by the creation of over 3000 features derived from
+                                Quantum Simulations.
+                                Subsequently, I employed multiple Boosting models to forecast four distinct temperatures
+                                crucial to
                                 understanding a significant alloy property.
                             </p>
                             <p class="mb-3">
-                                The standout performer among these models was a CatBoost model, which not only achieved an impressive 
-                                average R2 score of 94% in predicting these properties but also demonstrated its ability to accurately 
-                                predict the four target temperatures for alloys containing elements not present in the training dataset.
+                                The standout performer among these models was a CatBoost model, which not only achieved
+                                an impressive
+                                average R2 score of 94% in predicting these properties but also demonstrated its ability
+                                to accurately
+                                predict the four target temperatures for alloys containing elements not present in the
+                                training dataset.
                             </p>
                             <p class="mb-3">
-                                Furthermore, I harnessed the power of feature importance analysis, utilizing the Shapley value method 
-                                to construct a revealing graph. This graph provided invaluable insights into the Quantum properties 
+                                Furthermore, I harnessed the power of feature importance analysis, utilizing the Shapley
+                                value method
+                                to construct a revealing graph. This graph provided invaluable insights into the Quantum
+                                properties
                                 with the greatest impact on the four target temperatures.
                             </p>
                             <div class="project-tags">
@@ -211,7 +248,8 @@
                                 <span class="badge bg-secondary me-2">SHAP</span>
                                 <span class="badge bg-info me-2">Material Science</span>
                                 <span class="badge bg-success me-2">Feature Engineering</span>
-                                <a href="https://doi.org/10.1016/j.commatsci.2023.112225" target="_blank" class="badge bg-warning text-decoration-none">
+                                <a href="https://doi.org/10.1016/j.commatsci.2023.112225" target="_blank"
+                                    class="badge bg-warning text-decoration-none">
                                     <i class="fas fa-external-link-alt me-1"></i>Publication
                                 </a>
                             </div>
@@ -219,30 +257,89 @@
                     </div>
                 </div>
 
-                <!-- Project 5: Housing Market Analysis -->
+                <!-- Project 5: GlimzAI -->
                 <div class="custom-media">
                     <div class="row align-items-center">
                         <div class="col-lg-4 text-center mb-4 mb-lg-0">
-                            <img src="Images/TDI.png" alt="Housing Market Analysis" class="img-fluid" style="max-width: 300px;">
+                            <img src="Images/COMP.png" alt="GlimzAI Platform" class="img-fluid"
+                                style="max-width: 300px;">
                         </div>
                         <div class="col-lg-8">
                             <h3 class="mb-3">
-                                <i class="fas fa-home me-2"></i>Salt Lake County Housing Insights: Market and Homeowner-Sentiment Analysis
+                                <i class="fas fa-newspaper me-2"></i>GlimzAI – AI-Powered News Summarization Platform
+                            </h3>
+                            <p class="mb-3">
+                                <span class="badge bg-success me-2">Live Project</span>
+                                Designed and deployed a full-stack web application that ingests daily news and provides
+                                AI-driven summaries
+                                across multiple domains (politics, technology, business, science, etc.). The platform
+                                improves information
+                                accessibility for users by leveraging large language models for intelligent text
+                                summarization.
+                            </p>
+                            <p class="mb-3">
+                                Built backend using FastAPI + AWS Lambda + RDS, with React frontend hosted on AWS S3 +
+                                CloudFront.
+                                Implemented CI/CD and containerized services with Docker for scalable cloud deployment.
+                                The system
+                                automatically processes news feeds and generates concise, informative summaries using
+                                state-of-the-art NLP models.
+                            </p>
+                            <p class="mb-3">
+                                The platform demonstrates expertise in full-stack development, cloud architecture, and
+                                AI integration,
+                                showcasing the ability to build production-ready applications that bridge machine
+                                learning research
+                                with real-world user needs.
+                            </p>
+                            <div class="project-tags">
+                                <span class="badge bg-primary me-2">FastAPI</span>
+                                <span class="badge bg-secondary me-2">React</span>
+                                <span class="badge bg-info me-2">AWS</span>
+                                <span class="badge bg-success me-2">Docker</span>
+                                <span class="badge bg-warning me-2">NLP</span>
+                                <span class="badge bg-dark me-2">CI/CD</span>
+                                <a href="https://glimzai.com" target="_blank"
+                                    class="badge bg-success text-decoration-none">
+                                    <i class="fas fa-external-link-alt me-1"></i>Live Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Housing Market Analysis -->
+                <div class="custom-media">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                            <img src="Images/TDI.png" alt="Housing Market Analysis" class="img-fluid"
+                                style="max-width: 300px;">
+                        </div>
+                        <div class="col-lg-8">
+                            <h3 class="mb-3">
+                                <i class="fas fa-home me-2"></i>Salt Lake County Housing Insights: Market and
+                                Homeowner-Sentiment Analysis
                             </h3>
                             <p class="mb-3">
                                 <span class="badge bg-success me-2">Nerd Realtor</span>
-                                In this project, I conducted data scraping to gather demographic information and housing prices for 
-                                Salt Lake County, organized by zip code. Furthermore, I extracted more than two hundred homeowner 
+                                In this project, I conducted data scraping to gather demographic information and housing
+                                prices for
+                                Salt Lake County, organized by zip code. Furthermore, I extracted more than two hundred
+                                homeowner
                                 postings for each zip code from a neighborhood website.
                             </p>
                             <p class="mb-3">
-                                Employing TextBlob and NLTK, I performed sentiment analysis on these posts, ultimately generating 
-                                a happiness index for each zip code. To visualize this data, I leveraged Folium's heatmap 
+                                Employing TextBlob and NLTK, I performed sentiment analysis on these posts, ultimately
+                                generating
+                                a happiness index for each zip code. To visualize this data, I leveraged Folium's
+                                heatmap
                                 representation within a web application developed using Streamlit.
                             </p>
                             <p class="mb-3">
-                                Users can select specific demographic, market, and happiness indices, and the resulting overall 
-                                index is presented in the form of a Folium heatmap. This approach offers an efficient means of 
+                                Users can select specific demographic, market, and happiness indices, and the resulting
+                                overall
+                                index is presented in the form of a Folium heatmap. This approach offers an efficient
+                                means of
                                 conveying a substantial amount of information at a glance.
                             </p>
                             <div class="project-tags">
@@ -251,7 +348,8 @@
                                 <span class="badge bg-info me-2">NLTK</span>
                                 <span class="badge bg-success me-2">Streamlit</span>
                                 <span class="badge bg-warning me-2">Folium</span>
-                                <a href="https://github.com/amirbehbahanian/TDI-Project" target="_blank" class="badge bg-dark text-decoration-none">
+                                <a href="https://github.com/amirbehbahanian/TDI-Project" target="_blank"
+                                    class="badge bg-dark text-decoration-none">
                                     <i class="fab fa-github me-1"></i>GitHub
                                 </a>
                             </div>
@@ -271,13 +369,15 @@
                 </div>
                 <div class="col-md-6">
                     <div class="social-links">
-                        <a href="https://github.com/amirbehbahanian" target="_blank" class="text-muted me-3" aria-label="GitHub">
+                        <a href="https://github.com/amirbehbahanian" target="_blank" class="text-muted me-3"
+                            aria-label="GitHub">
                             <i class="fab fa-github fa-lg"></i>
                         </a>
-                        <a href="https://linkedin.com/in/amirbehbahanian" target="_blank" class="text-muted me-3" aria-label="LinkedIn">
+                        <a href="https://linkedin.com/in/amirbehbahanian" target="_blank" class="text-muted me-3"
+                            aria-label="LinkedIn">
                             <i class="fab fa-linkedin fa-lg"></i>
                         </a>
-                        <a href="mailto:amir.behbahanian@example.com" class="text-muted" aria-label="Email">
+                        <a href="mailto:amir.behbahanian@gmail.com" class="text-muted" aria-label="Email">
                             <i class="fas fa-envelope fa-lg"></i>
                         </a>
                     </div>
@@ -291,4 +391,5 @@
     <!-- Custom JS -->
     <script src="script.js"></script>
 </body>
+
 </html>
