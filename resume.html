@@ -53,7 +53,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="CSProjects.html">
-                                    <i class="fas fa-brain me-2"></i>Machine Learning
+                                    <i class="fas fa-brain me-2"></i>AI Systems & Machine Learning
                                 </a></li>
                             <li><a class="dropdown-item" href="CMS.html">
                                     <i class="fas fa-atom me-2"></i>Computational Material Science
@@ -88,9 +88,13 @@
                             <!-- <a href="AmirBehbahanianWeb.pdf" target="_blank" class="btn btn-primary btn-lg me-3">
                                 <i class="fas fa-download me-2"></i>Download PDF
                             </a> -->
-                            <div class="alert alert-info d-inline-block">
-                                <i class="fas fa-info-circle me-2"></i>Resume temporarily unavailable
-                            </div>
+                            <a href="https://linkedin.com/in/amirbehbahanian" target="_blank"
+                                class="btn btn-outline-primary btn-lg me-3 mb-2">
+                                <i class="fab fa-linkedin me-2"></i>LinkedIn
+                            </a>
+                            <a href="mailto:amir.behbahanian@gmail.com" class="btn btn-primary btn-lg mb-2">
+                                <i class="fas fa-envelope me-2"></i>Request Full PDF
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -109,12 +113,134 @@
                                         target="_blank">download the PDF</a> to view it.</p>
                             </iframe>
                         </div> -->
-                        <div class="text-center">
-                            <div class="alert alert-warning d-inline-block p-5">
-                                <i class="fas fa-exclamation-triangle fa-3x mb-3 text-warning"></i>
-                                <h3 class="mb-3">Resume Not Available</h3>
-                                <p class="mb-0">The resume is currently being updated and will be available soon.</p>
-                                <p class="mb-0">Please check back later or contact me directly for more information.</p>
+                        <!-- Summary -->
+                        <div class="publication-card mb-4">
+                            <h2 class="mb-3"><i class="fas fa-user me-2"></i>Summary</h2>
+                            <p class="mb-0">
+                                Machine Learning Engineer with experience taking ambiguous 0-to-1 AI systems from
+                                dataset and modeling design through evaluation, deployment, monitoring, APIs,
+                                infrastructure, and user-facing workflows. Hands-on depth in LLM agents and
+                                retrieval systems, physics simulation, Bayesian optimization, computer vision, and
+                                production Python/C++ services, with a focus on measurable decisions, uncertainty,
+                                and verification. Ph.D. in Mechanical Engineering. U.S. citizen.
+                            </p>
+                        </div>
+
+                        <!-- Experience -->
+                        <div class="publication-card mb-4">
+                            <h2 class="mb-4"><i class="fas fa-briefcase me-2"></i>Professional Experience</h2>
+
+                            <div class="publication-item mb-4 p-4 border-start border-primary border-4 bg-white rounded shadow-sm">
+                                <h5 class="text-primary mb-1">Machine Learning Engineer III, Agentic AI Systems</h5>
+                                <p class="text-muted mb-2">Blue Origin, Renton, WA &middot; 06/2025 - Present</p>
+                                <ul class="mb-0">
+                                    <li>Applied AI and machine learning systems. Details available on request.</li>
+                                </ul>
+                            </div>
+
+                            <div class="publication-item mb-4 p-4 border-start border-primary border-4 bg-white rounded shadow-sm">
+                                <h5 class="text-primary mb-1">Senior Machine Learning Software Engineer, Simulation AI Systems</h5>
+                                <p class="text-muted mb-2">Dyno Nobel, Salt Lake City, UT &middot; 04/2024 - 06/2025</p>
+                                <ul class="mb-0">
+                                    <li>Led a 4-person team productionizing a cloud-native simulation and
+                                        optimization platform around patent-pending C++ physics models (AWS Fargate,
+                                        API Gateway, ALB, CI/CD).</li>
+                                    <li>Designed a tool-using multi-agent system that invoked simulation services,
+                                        evaluated candidate blast plans, and generated recommendations under domain
+                                        constraints.</li>
+                                    <li>Created the company's first RAG platform from ingestion and indexing through
+                                        prompt tuning, evaluation, API serving, and rollout.</li>
+                                </ul>
+                            </div>
+
+                            <div class="publication-item mb-4 p-4 border-start border-primary border-4 bg-white rounded shadow-sm">
+                                <h5 class="text-primary mb-1">Machine Learning Engineer II, Industrial AI Systems</h5>
+                                <p class="text-muted mb-2">T.D. Williamson, Salt Lake City, UT &middot; 10/2022 - 04/2024</p>
+                                <ul class="mb-0">
+                                    <li>Built a distributed predictive-maintenance system from sensor ingestion and
+                                        LSTM training through C++ edge deployment, validation, and monitoring, helping
+                                        prevent failures worth up to $500,000 per rerun.</li>
+                                    <li>Built a real-time corrosion-detection workflow (FPN with ResNeXt-50 encoder)
+                                        from dataset preparation through on-prem serving, with an ICMLA 2023
+                                        publication.</li>
+                                </ul>
+                            </div>
+
+                            <div class="publication-item mb-0 p-4 border-start border-primary border-4 bg-white rounded shadow-sm">
+                                <h5 class="text-primary mb-1">Data / Software Engineer</h5>
+                                <p class="text-muted mb-2">Iran Host &middot; 03/2012 - 12/2015</p>
+                                <ul class="mb-0">
+                                    <li>Modeled seasonal customer behavior from sales data with frequency analysis
+                                        and autoregressive methods for targeted marketing decisions.</li>
+                                    <li>Implemented real-time C++ data-compaction services for scalable analytics
+                                        pipelines.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Research -->
+                        <div class="publication-card mb-4">
+                            <h2 class="mb-4"><i class="fas fa-flask me-2"></i>Research Experience</h2>
+
+                            <div class="publication-item mb-4 p-4 border-start border-success border-4 bg-white rounded shadow-sm">
+                                <h5 class="text-success mb-1">Postdoctoral AI Materials Discovery Researcher</h5>
+                                <p class="text-muted mb-2">Texas A&amp;M University, College Station, TX &middot; 12/2021 - 08/2022</p>
+                                <ul class="mb-0">
+                                    <li>Built a three-model surrogate and Bayesian-optimization workflow for
+                                        closed-loop materials discovery, from simulation-data curation through
+                                        acquisition-driven candidate selection and experiment planning, for a $1.7M AI
+                                        integration project.</li>
+                                </ul>
+                            </div>
+
+                            <div class="publication-item mb-4 p-4 border-start border-success border-4 bg-white rounded shadow-sm">
+                                <h5 class="text-success mb-1">Computational Materials ML Scientist Intern</h5>
+                                <p class="text-muted mb-2">Tokyo Electron US, Austin, TX &middot; 06/2021 - 12/2021</p>
+                                <ul class="mb-0">
+                                    <li>Developed atomistic-simulation workflows (Quantum ESPRESSO, VASP) and
+                                        automated Phonopy and AMSET post-processing into ML-ready datasets and
+                                        decision-ready model inputs.</li>
+                                </ul>
+                            </div>
+
+                            <div class="publication-item mb-0 p-4 border-start border-success border-4 bg-white rounded shadow-sm">
+                                <h5 class="text-success mb-1">Graduate Computational Materials ML Research Assistant</h5>
+                                <p class="text-muted mb-2">Utah State University, Logan, UT &middot; 08/2016 - 06/2021</p>
+                                <ul class="mb-0">
+                                    <li>Ran large-scale LAMMPS molecular-dynamics campaigns and processed more than
+                                        2 TB of simulation data with parallel Python pipelines.</li>
+                                    <li>Applied Monte Carlo simulation, uncertainty analysis, and optimization to
+                                        quantify materials-model risk; improved HPC workflows with multiprocessing and
+                                        automated analysis.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Education & Skills -->
+                        <div class="row">
+                            <div class="col-lg-5 mb-4">
+                                <div class="publication-card h-100">
+                                    <h2 class="mb-3"><i class="fas fa-graduation-cap me-2"></i>Education</h2>
+                                    <p class="mb-2"><strong>Ph.D., Mechanical Engineering</strong><br>
+                                        Utah State University &middot; 12/2021<br>
+                                        <span class="text-muted">10+ peer-reviewed publications</span></p>
+                                    <p class="mb-0"><strong>B.Sc., Mechanical Engineering</strong><br>
+                                        Sharif University of Technology &middot; 02/2012</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 mb-4">
+                                <div class="publication-card h-100">
+                                    <h2 class="mb-3"><i class="fas fa-tools me-2"></i>Core Skills</h2>
+                                    <p class="mb-2"><strong>ML &amp; Experimentation:</strong> LLM/RAG and Graph-RAG,
+                                        agentic systems, VLMs, prompt/model tuning, Bayesian optimization, surrogate
+                                        modeling, uncertainty analysis, Monte Carlo simulation, benchmark evaluation</p>
+                                    <p class="mb-2"><strong>Engineering:</strong> Python, C++, SQL, GraphQL, React,
+                                        FastAPI, APIs, data pipelines, distributed/edge systems</p>
+                                    <p class="mb-2"><strong>Production &amp; Platform:</strong> AWS, Docker, Kubernetes,
+                                        Terraform, CI/CD, observability, monitoring, HPC job orchestration</p>
+                                    <p class="mb-0"><strong>Scientific Computing:</strong> DFT (VASP, Quantum ESPRESSO),
+                                        MD (LAMMPS), Phonopy, AMSET</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -147,7 +273,7 @@
                             <div class="card-body">
                                 <i class="fas fa-briefcase fa-3x text-primary mb-3"></i>
                                 <h5 class="card-title">Current Role</h5>
-                                <p class="card-text">Software Engineer III<br>Blue Origin</p>
+                                <p class="card-text">Machine Learning Engineer III<br>Agentic AI Systems, Blue Origin</p>
                             </div>
                         </div>
                     </div>
@@ -165,7 +291,7 @@
                             <div class="card-body">
                                 <i class="fas fa-code fa-3x text-primary mb-3"></i>
                                 <h5 class="card-title">Expertise</h5>
-                                <p class="card-text">Machine Learning<br>Data Science<br>Software Engineering</p>
+                                <p class="card-text">LLM Agents & Evaluation<br>Simulation-Driven AI<br>Production ML</p>
                             </div>
                         </div>
                     </div>
@@ -179,7 +305,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <p>&copy; 2024 Amir Behbahanian. All rights reserved.</p>
+                    <p>&copy; 2026 Amir Behbahanian. All rights reserved.</p>
                 </div>
                 <div class="col-md-6">
                     <div class="social-links">

@@ -68,6 +68,26 @@ body {
     transform: scale(1.05);
 }
 
+/* Icon tile for projects without a screenshot */
+.icon-tile {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 40px 0 40px 0;
+    background: linear-gradient(135deg, var(--primary-color), #005f8a);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    transition: var(--transition);
+}
+
+.custom-media:hover .icon-tile {
+    transform: scale(1.05);
+}
+
 /* Card Styles */
 .custom-card-body {
     height: 300px;
